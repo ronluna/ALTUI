@@ -2827,10 +2827,10 @@ var UIManager  = ( function( window, undefined ) {
 		}
 
 		var idDisplay = "<div class='pull-right text-muted'><small>#"+scene.altuiid+" </small></div>";
-		var eyeMonitorHtml = ""	//custom ctrlable
-			// (scene.status_mode=="continuous")
-			// ? glyphTemplate.format( "eye", _T("Monitor Scene") ,"altui-scene-eyemonitor text-success" )
-			// : glyphTemplate.format( "eye-slash", _T("Monitor Scene") ,"altui-scene-eyemonitor text-muted" )
+		var eyeMonitorHtml = 	//custom ctrlable
+			 (scene.status_mode=="continuous")
+			 ? glyphTemplate.format( "eye", _T("Monitor Scene") ,"altui-scene-eyemonitor text-success" )
+			 : glyphTemplate.format( "eye-slash", _T("Monitor Scene") ,"altui-scene-eyemonitor text-muted" )
 
 		var scenecontainerTemplate = "";
 		scenecontainerTemplate	+=	"<div class='card xxx altui-scene "+((norefresh==true) ? 'altui-norefresh': '') +"' id='{0}' data-altuiid='{0}'>"
